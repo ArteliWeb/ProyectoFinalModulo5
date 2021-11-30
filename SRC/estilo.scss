@@ -1,0 +1,14 @@
+$body-color: #eaeaea;
+$titulo-color: black;
+$titulo-tamano: 22px;
+
+.fondo{
+    background: $body-color;
+}
+
+.titulo{
+    color: $titulo-color;
+    text-align: center;
+    font-size: $titulo-tamano;
+    font-weight: bold;
+}

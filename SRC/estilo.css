@@ -1,0 +1,80 @@
+.hola{
+    color:orange;
+}
+
+.encabezado {
+    text-align: center;
+    padding: 15px;
+}
+
+.encabezado img{
+    width: -webkit-fill-available;
+}
+
+/* Acomodo de los articulos */
+.articulos_1{ /* Distribucion y medida de los articulos en el sitio web */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0%;
+    padding: 5px 40px;	
+}
+#contenedor{ /* El diseño que tendra el contenido del articulo  */
+	text-align:left;
+	padding:0px;
+	border:3px solid #d4d4d4; 
+	margin:5px; 
+	float:left;
+	background: #d4d4d4;
+} 
+.img_articulos{ /* Carecteristicas de la imagen del articulo  */
+    text-align: center;
+    background: white;
+	padding: 10px 0px;
+} 
+.content_articulo{
+	background: lightgrey;
+    display: flex;
+	padding-bottom: 20px;
+}
+.descripcion_art{
+	width: 50%;
+    padding: 15px;
+	font-size: 25px;
+}
+.precio_art{
+	width: 35%;
+    padding: 10px;
+    text-align: center;
+	font-size: 20px;
+}
+
+
+/* Diseño en el Footer */
+#footer{
+	background:white;
+	height: 100px;
+	font: bold 20px/30px Helvetica;
+	color: black;
+    display: flex;
+    justify-content: left;
+    padding: 5px 40px;	
+}
+.content_footer{ /* Alineacion y carecteristicas del contenido del Footer */
+    text-align: left;
+    padding: 0px;
+    margin: 5px;
+    float: left;
+	font-size: 14px;
+}
+
+@media(max-width:540px) {
+    .articulos_1{ 
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 0%;
+        padding: 5px 30px;	
+    }
+
+}
